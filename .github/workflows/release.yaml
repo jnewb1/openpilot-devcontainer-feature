@@ -15,10 +15,11 @@ jobs:
       pull-requests: write
       packages: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@master
-      - name: Checkout submodules
-        uses: textbook/git-checkout-submodule-action@master
+      steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - name: "Publish Features"
         uses: devcontainers/action@v1
         with:
