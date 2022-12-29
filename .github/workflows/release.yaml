@@ -19,6 +19,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: recursive
+      - uses: actions/checkout@master
+      - name: Copy the Readmes
+        run: |
+          mkdir -P src/openpilot/tools
+          cp openpilot/update_requirements.sh openpilot/pyproject.toml openpilot/poetry.lock openpilot/.python-version src/openpilot
+          cp openpilot/tools/ubuntu_setup.sh openpilot/tools/openpilot_env.sh src/openpilot/tools
       - name: "Publish Features"
         uses: devcontainers/action@v1
         with:
