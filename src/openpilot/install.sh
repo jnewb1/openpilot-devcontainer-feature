@@ -1,6 +1,6 @@
 #!/bin/sh
 
-chmod +rx ./tools/ubuntu_setup.sh
+chmod a+rwx ./tools/ubuntu_setup.sh
 
 ls -la ./tools
 
