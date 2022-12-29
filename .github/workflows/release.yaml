@@ -15,7 +15,6 @@ jobs:
       pull-requests: write
       packages: write
     steps:
-      steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v3
         with:
@@ -26,10 +25,8 @@ jobs:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
-          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Create PR for Documentation
         id: push_image_info
         env:
