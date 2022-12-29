@@ -4,7 +4,7 @@
     "version": "1.0.1",
     "description": "wslg",
     "containerEnv": {
-        "DISPLAY": ":0",
+        "DISPLAY": "${DISPLAY}",
         "WAYLAND_DISPLAY": "${WAYLAND_DISPLAY}",
         "XDG_RUNTIME_DIR": "${XDG_RUNTIME_DIR}",
         "PULSE_SERVER": "${PULSE_SERVER}",
@@ -14,17 +14,17 @@
         {
             "source": "/tmp/.X11-unix",
             "target": "/tmp/.X11-unix",
-            "type": "volume"
+            "type": "bind"
         },
         {
             "source": "/mnt/wslg",
             "target": "/mnt/wslg",
-            "type": "volume"
+            "type": "bind"
         },
         {
             "source": "/usr/lib/wsl",
             "target": "/usr/lib/wsl",
-            "type": "volume"
+            "type": "bind"
         }
     ]
 }
