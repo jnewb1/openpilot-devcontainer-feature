@@ -1,0 +1,30 @@
+{
+    "name": "wslg",
+    "id": "wslg",
+    "version": "1.0.1",
+    "description": "wslg",
+    "containerEnv": {
+        "DISPLAY": ":0",
+        "WAYLAND_DISPLAY": "${WAYLAND_DISPLAY}",
+        "XDG_RUNTIME_DIR": "${XDG_RUNTIME_DIR}",
+        "PULSE_SERVER": "${PULSE_SERVER}",
+        "LD_LIBRARY_PATH": "/usr/lib/wsl/lib"
+    },
+    "mounts": [
+        {
+            "source": "/tmp/.X11-unix",
+            "target": "/tmp/.X11-unix",
+            "type": "volume"
+        },
+        {
+            "source": "/mnt/wslg",
+            "target": "/mnt/wslg",
+            "type": "volume"
+        },
+        {
+            "source": "/usr/lib/wsl",
+            "target": "/usr/lib/wsl",
+            "type": "volume"
+        }
+    ]
+}
