@@ -1,6 +1,3 @@
-[submodule "src/openpilot/openpilot"]
-	path = openpilot
-	url = ../../commaai/openpilot.git
 [submodule "openpilot"]
 	path = openpilot
 	url = ../../commaai/openpilot.git
