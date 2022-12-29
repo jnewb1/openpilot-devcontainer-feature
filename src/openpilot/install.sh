@@ -1,6 +1,5 @@
 #!/bin/sh
 
-echo "Running install script"
-chmod +x ./tools/ubuntu_setup.sh
-echo "Added execute permission"
+chmod +rx ./tools/ubuntu_setup.sh
+
 su -c './tools/ubuntu_setup.sh' $_REMOTE_USER
