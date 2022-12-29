@@ -1,4 +1,4 @@
 #!/bin/sh
 
-chmod +x ./openpilot/tools/ubuntu_setup.sh
-./openpilot/tools/ubuntu_setup.sh
+chmod +x ./tools/ubuntu_setup.sh
+./tools/ubuntu_setup.sh
