@@ -1,7 +1,7 @@
 {
     "name": "openpilot",
     "id": "openpilot",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "Openpilot libraries",
     "options": {}
 }
